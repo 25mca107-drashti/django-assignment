@@ -17,7 +17,7 @@ class QuestionAdmin(admin.ModelAdmin):
 
 
 class LessonAdmin(admin.ModelAdmin):
-    pass
+    inlines = [QuestionInline]
 
 
 admin.site.register(Question, QuestionAdmin)
